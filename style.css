@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.under-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+
+}
+.under-container h2{
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff0000); /* Dégradé de couleurs */
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animate 3s linear infinite;
+    user-select: none;
+}
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.under-container img{
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.under-container label{
+    left: 0;
+    margin-top: 20px;
+}
+.logo{
+    max-width: 50px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.under-container button{
+    color: white;
+    min-height: 30px;
+    margin-top: 15px;
+    border: none;
+    background-color: #66FF00;
+    border-radius: 30px;
+}
+input{
+    margin-top: 10px;
+    border: none;
+    min-height: 30px;
+    border-bottom: solid white 2px;
+}
+input::placeholder{
+    text-align: center;
+}
+.ou{
+    margin-top: 20px;
+    display: flex;
+    margin: 20px auto;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+.alternative{
+    text-align: center;
+}
+.google{
+    display: flex;
+    border: solid 1px white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.google img{
+    margin-right: 10px;
+    max-width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.facebook{
+    display: flex;
+    border: solid 1px white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.facebook img{
+    margin-right: 10px;
+    max-width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.apple{
+    display: flex;
+    border: solid 1px white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.apple img{
+    margin-right: 10px;
+    max-width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
