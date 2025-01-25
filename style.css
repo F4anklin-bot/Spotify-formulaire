@@ -61,6 +61,7 @@ main{
     border: none;
     background-color: #66FF00;
     border-radius: 30px;
+    cursor: pointer;
 }
 input{
     margin-top: 10px;
@@ -82,6 +83,7 @@ input::placeholder{
 }
 .alternative{
     text-align: center;
+    border-bottom: solid 0.5px white;
 }
 .google{
     display: flex;
@@ -127,4 +129,20 @@ input::placeholder{
     max-width: 35px;
     border-radius: 50%;
     object-fit: cover;
+}
+.already{
+    font-size: 0.8rem;
+}
+.already a{
+    color: gray;
+}
+footer{
+    text-align: center;
+    color: white;
+    text-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+}
+footer a{
+    color: gray;
 }

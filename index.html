@@ -12,15 +12,29 @@
         <div class="under-container">
             <h2 class="title">Inscrivez-<br>vous pour <br> commencer <br>à écouter</h2>
             <label for="email">Adresse e-mail</label>
-            <input type="email" placeholder="nom@domaine.com">
-            <button>Suivant</button>
+            <input type="email" id="input" placeholder="nom@domaine.com">
+            <button id="submit">Suivant</button>
             <section class="ou"><p class="left">--------</p> ou <p class="right">--------</p></section>
             <section class="alternative">
                 <div class="google"> <img src="Google.jpeg" alt="logo de google"> Se connecter avec Google</div>
                 <div class="facebook"> <img src="Facebook.jpeg" alt="logo de facebook"> Se connecter avec Facebook</div>
                 <div class="apple"> <img src="a1664041-5ed1-4eb7-9aa1-00153ecdfaf1.jpeg" alt="logo de apple"> Se connecter avec Apple</div>
-            </section>
+            </section> <br>
+            <p class="already">Vous avez déjà un compte ? <a href=""> Connectez-vous ici.</a></p>
         </div>
+        <footer>This site is protected by reCAPTCHA and the google <br> <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply</footer>
     </main>
+    <script> 
+        const input=document.getElementById("input");
+        const submit=document.getElementById("submit");
+        submit.addEventListener("click", function(){
+            if (input.value.trim()===""){
+                alert("Vous devez entrer des valeurs");
+            }
+        })
+        
+
+
+    </script>
 </body>
 </html>
