@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white">
+    <div class=" flex flex-column justify-center items-center mt-8 m-auto">
+        <form method="post" action="pdo.php">
+        <p class="text-6xl p-[5px] font-bold mb-5 justify-center items-center text-center">
+            Inscrivez-<br>vous pour <br>commencer <br>à écouter
+        </p>
+        <div class="m-auto">
+            <div  class="flex flex-col">
+                <label for="name" class="font-bold">Nom </label>
+                <input id="nom" type="text" placeholder="Veuiller entrer votre nom" class="border-b-[3px] text-center min-h-[50px] mb-3" required>
+            </div>
+            <div class="flex flex-col">
+                <label for="name" class="font-bold">Prenoms </label>
+                <input id="prenoms" type="text" class="border-b-[3px] text-center min-h-[50px] mb-3" placeholder="Veuiller entrer votre prenom">
+            </div>
+            <div  class="flex flex-col">
+                <label for="email" class="font-bold">Email </label>
+                <input id="email" class="border-b-[3px] text-center min-h-[50px] mb-3" type="email" placeholder="Veuiller entrer votre email"  required>
+            </div>
+            <div  class="flex flex-col">
+                <label for="password" class="font-bold">Mot de passe : </label>
+                <input id="password" type="password" minlength="8" placeholder="Veuiller créer un mot de passe fort" class="text-center min-h-[50px] min-w-[300px] border-white border-b-[3px]" required>
+            </div>
+        </div>
+        <button class="hover:text-green-400 hover:bg-white m-auto mt-5 cursor-pointer bg-green-400 min-h-[30px] min-w-full rounded-xl flex justify-center items-center mb-8">S'inscrire</button>
+        <section class="alternative">
+            <p class="text-center mb-[20px]">Vous avez déjà un compte ? <a class="text-gray-400" href="index.html">S'inscrire</a></p>
+            <div class="flex border-[1px] rounded-[30px] font-bold justify-center items-center m-[10px] p-[10px]"> <img class="max-w-[25px] pr-2" src="Google.jpeg" alt="logo de google"> Se connecter avec Google</div>
+            <div class="flex border-[1px] rounded-[30px] font-bold justify-center items-center m-[10px] p-[10px]""> <img class="max-w-[25px] pr-2" src="Facebook.jpeg" alt="logo de facebook"> Se connecter avec Facebook</div>
+            <div class="flex border-[1px] rounded-[30px] font-bold justify-center items-center m-[10px] p-[10px]""> <img class="max-w-[35px] pr-2" src="a1664041-5ed1-4eb7-9aa1-00153ecdfaf1.jpeg" alt="logo de apple"> Se connecter avec Apple</div>
+        </section> <br>
+        </form>
+    </div>
+</body>
+</html>
